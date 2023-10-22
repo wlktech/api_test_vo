@@ -8,18 +8,25 @@
     /* font-family: 'Poppins', sans-serif; */
 }
 #main{
-    height: 100vh;
     background-color: #D4216C;
     margin: 0;
     padding: 0;
 }
+#top-layer{
+    min-height: 90vh;
+    border-radius: 0 0 50px 50px;
+    /* overflow: scroll; */
+}
 #secondary{
     border-radius: 0 0 50px 0;
     background-color: #ffffff;
-    z-index: 1;
+    /* z-index: 1; */
 }
+/* .player{
+    background-color: #D4216C;
+} */
 #sidebar{
-    height: 90vh;
+    /* height: 90vh; */
     border-radius: 0 0 0 50px;
     background-color: #f2f2f2;
 }
@@ -172,8 +179,8 @@ table tr:hover{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgba(0, 0, 0, 0.5); /* Set a background color */
-    color: #d4a300; /* Text color */
+    background-color: rgba(0, 0, 0, 0.302); /* Set a background color */
+    color: #D4216C; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 50% 10%; /* Rounded corners */
@@ -230,7 +237,32 @@ table tr:hover{
 
 @media only screen and (max-width:992px){
     .profile-img{
-        width: 40px;
+        width: 50px;
+    }
+    .profile{
+        margin: auto;
+    }
+    .nav-container{
+        text-align: center;
+    }
+    .nav-container span{
+        font-size: 12px;
+    }
+    .nav-header{
+        font-size: 12px;
+    }
+    .profile-section{
+        text-align: center;
+        margin: auto;
+    }
+    .profile-name{
+        font-size: 14px;
+    }
+    .badge1{
+        font-size: 10px;
+    }
+    .card-container, .card-container1{
+        margin: 10px;
     }
 }
 
