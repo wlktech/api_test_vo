@@ -205,3 +205,33 @@ setInterval(() => {
         progress.value = song.currentTime;
     }
 }, 500);
+
+// Define an array of audio sources
+const audioSources = [
+    './assets/img/lazy_song.mp3/',
+    './assets/i_have_someone_i_like.mp3/',
+    './assets/lazy_song.mp3/',
+    // Add more audio sources as needed
+];
+
+let currentAudioIndex = 0;
+
+// Function to load a new audio source
+function loadAudio(index) {
+    song.src = audioSources[index];
+    song.load();
+    song.play();
+}
+
+// Function to play the previous audio
+function playPrev() {
+    currentAudioIndex = (currentAudioIndex - 1 + audioSources.length) % audioSources.length;
+    loadAudio(currentAudioIndex);
+}
+
+// Function to play the next audio
+function playNext() {
+    currentAudioIndex = (currentAudioIndex + 1) % audioSources.length;
+    loadAudio(currentAudioIndex);
+}
+
