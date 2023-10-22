@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- sidebar start -->
+    
     <div class="container-fluid" id="main" style="overflow-x: hidden;">
         <div class="row">
+          <!-- sidebar start -->
           <div class="col-md-2 col-3 shadow" id="sidebar">
             <!-- profile section -->
             <div class="profile-section mb-0 pb-0">
@@ -148,6 +149,7 @@
             </div>
             <!-- playlist section -->
           </div>
+          <!-- sidebar end -->
           <div class="col-md-10 col-9" id="secondary">
             <!-- top nav start -->
             <div class="container pt-4 px-4">
@@ -355,8 +357,44 @@
             <!-- recently played and recommendation end -->
           </div>
         </div>
+        <div class="player">
+          <audio controls id="song" class="d-none">
+            <source src="./assets/img/lazy_song.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3">
+              <div class="controls mt-3">
+                <div class="d-flex justify-content-around">
+                  <div>
+                    <i class="fas fa-backward-step text-white"></i>
+                  </div>
+                  <div onclick="playPause()">
+                    <i class="fas fa-play play1" id="ctrlIcon"></i>
+                  </div>
+                  <div>
+                    <i class="fas fa-forward-step text-white"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex justify-content-between">
+                <span class="d-block text-white" id="start-time">0:00</span>
+                <input type="range" name="" value="0" id="progress">
+                <span class="d-block text-white" id="end-time">0:00</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              
+            </div>
+          </div>
+        </div>
     </div>
-    <!-- sidebar end -->
+
 
 
     <!-- Scroll Top -->
