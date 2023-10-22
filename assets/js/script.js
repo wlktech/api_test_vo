@@ -209,8 +209,8 @@ setInterval(() => {
 // Define an array of audio sources
 const audioSources = [
     './assets/img/lazy_song.mp3/',
-    './assets/i_have_someone_i_like.mp3/',
-    './assets/lazy_song.mp3/',
+    './assets/img/i_have_someone_i_like.mp3/',
+    './assets/img/lazy_song.mp3/',
     // Add more audio sources as needed
 ];
 
