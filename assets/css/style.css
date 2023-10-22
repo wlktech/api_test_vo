@@ -195,7 +195,7 @@ table tr:hover{
     cursor: pointer;
     margin: 40px 0;
 }
-#start-time, #end-time{
+#start-time, #endTime{
     margin: 30px 10px;
 }
 
