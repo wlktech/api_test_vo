@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+*{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Source Sans Pro;
+    /* font-family: 'Poppins', sans-serif; */
+}
+#main{
+    height: 100vh;
+    background-color: #D4216C;
+    margin: 0;
+    padding: 0;
+}
+#secondary{
+    border-radius: 0 0 50px 0;
+    background-color: #ffffff;
+    z-index: 1;
+}
+#sidebar{
+    height: 90vh;
+    border-radius: 0 0 0 50px;
+    background-color: #f2f2f2;
+}
+/* sidebar */
+.badge1{
+    font-size: 11px;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+.text-bg-outline-secondary{
+    border: 1px solid #a4a4a4;
+    color: #a4a4a4;
+}
+.profile-section{
+    padding: 20px 10px 10px 10px;
+}
+.profile{
+    margin-right: 15px;
+}
+.profile-img{
+    width: 50px;
+}
+.profile-name{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+.profile-angle{
+    font-size: 14px;
+    display: block;
+    padding: 4px 0;
+}
+.dropdown-item{
+    font-family: Source Sans Pro;
+}
+.nav-container{
+    padding: 6px 10px;
+}
+.nav-header{
+    font-size: 14px;
+    color: #a4a4a4;
+}
+.nav-container:hover{
+    background-color: #e5e5e5;
+    padding-left: 10px;
+    transform: scale(.9);
+    transition-duration: .6s;
+}
+.active{
+    background-color: #e5e5e5;
+}
+/* sidebar */
+
+/* right card */
+.card-container{
+    width: 100%;
+    height: 250px;
+    background: rgb(188,34,137);
+    background: linear-gradient(126deg, rgba(188,34,137,1) 0%, rgba(234,63,126,1) 100%);
+    border-radius: 30px;
+    box-shadow: 1px 2px 3px #000;
+    margin: 20px;
+    padding: 20px;
+}
+.card-container1{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(332deg, rgba(1,84,164,1) 0%, rgba(27,156,226,1) 100%);
+    border-radius: 30px;
+    box-shadow: 1px 2px 3px #000;
+    margin:20px;
+    padding: 20px;
+}
+.card-container:hover {
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+}
+
+.card-container h4{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.card-container small{
+    color: rgba(255,255,255, 0.4);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.btn-play{
+    color: #fff;
+    padding: 10px;
+}
+
+.card-container1:hover {
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+}
+
+.card-container1 h4{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.card-container1 small{
+    color: rgba(255,255,255, 0.4);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.btn-play{
+    color: #fff;
+    padding: 10px;
+}
+/* right card */
+
+/* recently played */
+
+.square-box{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(222, 222, 222);
+    border-radius: 10px;
+}
+.track-container p{
+    margin-top: 8px;
+}
+table tr:hover{
+    background-color: #eaeaea;
+    padding-left: 10px;
+    /* transform: scale(.9); */
+    transition-duration: .6s;
+}
+
+.square-box1{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(222, 222, 222);
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px #e7e7e7;
+}
+
+
+
+
+/* Scroll to top button for index.html*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.5); /* Set a background color */
+    color: #d4a300; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50% 10%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+#myBtn:hover {
+    background-color: rgba(2, 2, 2, 0.7); /* Add a dark-grey background on hover */
+}
+/* Scroll to top button for room.html*/
+
+
+
+@media only screen and (max-width:992px){
+    .profile-img{
+        width: 40px;
+    }
+}
+

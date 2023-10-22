@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>Interactive Layout</title>
+
+    <!-- bootstrap css links -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.theme.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- sidebar start -->
+    <div class="container-fluid" id="main" style="overflow: hidden;">
+        <div class="row">
+          <div class="col-md-2 col-3 shadow" id="sidebar">
+            <!-- profile section -->
+            <div class="profile-section mb-0 pb-0">
+              <div>
+                <div class="d-flex">
+                  <div class="profile">
+                    <img src="./assets/img/profile.png" class="rounded-circle profile-img" alt="">
+                  </div>
+                  <div class="dropdown-right d-none d-md-block">
+                    <a href="" class="text-decoration-none text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex">
+                        <p class="profile-name">Joshua</p>
+                        <i class="fas fa-angle-down profile-angle d-block ms-2" style="margin-top: 3px;"></i>
+                      </div>
+                      <span class="badge1 text-bg-outline-secondary">PREMIUM</span>
+                    </a>
+                    <ul class="dropdown-menu border border-0 shadow">
+                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user-circle me-2"></i>Profile</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-right-to-bracket me-2"></i>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- profile section -->
+  
+            <!-- browse section -->
+            <p class="pt-4 pb-0 mb-2 nav-header d-none d-md-block px-2">BROWSE</p>
+            <div class="nav-container active">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">Home</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fas fa-music"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">Songs</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fas fa-sliders"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">Playlists</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">Just for You</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">Top Charts</span>
+                </div>
+              </div>
+            </div>
+            <!-- browse section -->
+  
+            <!-- playlist section -->
+            <div class="d-flex justify-content-between nav-header px-2 mt-4 mb-2">
+              <div>
+                YOUR PLAYLISTS
+              </div>
+              <div>
+                <i class="fas fa-plus-circle d-block"></i>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fas fa-list"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">Workout Mix</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fas fa-list"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">Chillin' at Home</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fas fa-list"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">Booping at Adobe</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="d-flex">
+                <div class="p-1">
+                  <i class="fa-solid fa-list"></i>
+                </div>
+                <div class="ms-2 p-1">
+                  <span class="d-none d-md-inline-block">XD 4 Life</span>
+                </div>
+              </div>
+            </div>
+            <!-- playlist section -->
+          </div>
+          <div class="col-md-10 col-9" id="secondary">
+            <!-- top nav start -->
+            <div class="container pt-4 px-4">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fas fa-magnifying-glass"></i>
+                </div>
+                <div class="pe-3">
+                  <a href="" class="text-decoration-none position-relative">
+                    <i class="fa-regular fa-bell text-dark"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      1
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- top nav start -->
+
+            <!-- slider start -->
+            <div class="container-fluid">
+              <div class="responsive">
+                <div class="card-container shadow position-relative">
+                  <h4>GET LOST</h4>
+                  <small>in your music.</small>
+                  <div class="position-absolute bottom-0 start-0 ms-3 mb-3">
+                    <i class="fas fa-play border border-2 rounded-circle text-white border-white btn-play"></i>
+                  </div>
+                </div>
+                <div class="card-container1 shadow position-relative">
+                  <h4>MELLOW</h4>
+                  <small>beats.</small>
+                  <div class="position-absolute bottom-0 start-0 ms-3 mb-3">
+                    <i class="fas fa-play border border-2 rounded-circle text-white border-white btn-play"></i>
+                  </div>
+                </div>
+                <div class="card-container shadow position-relative">
+                  <h4>GET LOST</h4>
+                  <small>in your music.</small>
+                  <div class="position-absolute bottom-0 start-0 ms-3 mb-3">
+                    <i class="fas fa-play border border-2 rounded-circle text-white border-white btn-play"></i>
+                  </div>
+                </div>
+                <div class="card-container1 shadow position-relative">
+                  <h4>MELLOW</h4>
+                  <small>beats.</small>
+                  <div class="position-absolute bottom-0 start-0 ms-3 mb-3">
+                    <i class="fas fa-play border border-2 rounded-circle text-white border-white btn-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider end -->
+
+            <!-- recently played and recommendation start -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 mb-3 px-4">
+                  <h4>Recently Played</h4>
+                  <div class="track-container py-3 table-responsive">
+                    <table class="table table-borderless">
+                      <tr>
+                        <th>
+                          <div class="d-flex">
+                            <div class="square-box me-2"></div>
+                            <p>All that Jazz</p>
+                          </div>
+                        </th>
+                        <td>
+                          <p>
+                            Various Artists
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            13:30
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            <i class="fa-regular fa-heart"></i>
+                          </p>
+                        </td>
+                        <td>
+                          ...
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <div class="d-flex">
+                            <div class="square-box me-2"></div>
+                            <p>Splashed</p>
+                          </div>
+                        </th>
+                        <td>
+                          <p>
+                            Blue-Eyed D...
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            05:12
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            <i class="fa-regular fa-heart"></i>
+                          </p>
+                        </td>
+                        <td>
+                          ...
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <div class="d-flex">
+                            <div class="square-box me-2"></div>
+                            <p>Prism</p>
+                          </div>
+                        </th>
+                        <td>
+                          <p>
+                            Gus Bot
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            03:22
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            <i class="fa-regular fa-heart"></i>
+                          </p>
+                        </td>
+                        <td>
+                          ...
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <div class="d-flex">
+                            <div class="square-box me-2"></div>
+                            <p>Prism</p>
+                          </div>
+                        </th>
+                        <td>
+                          <p>
+                            Gus Bot
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            03:22
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            <i class="fa-regular fa-heart"></i>
+                          </p>
+                        </td>
+                        <td>
+                          ...
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-3 px-4">
+                  <h4 class="mb-5">Recommended For You</h4>
+                  <div class="responsive1">
+                    <div class="re-card">
+                      <div class="square-box1"></div>
+                      <div class="card-body mt-2">
+                        <h5 class="mb-0">Best of Blues</h5>
+                        <small class="text-secondary">Jazzmaster Bill</small>
+                      </div>
+                    </div>
+                    <div class="re-card">
+                      <div class="square-box1"></div>
+                      <div class="card-body mt-2">
+                        <h5 class="mb-0">Out of This World</h5>
+                        <small class="text-secondary">Jazzmaster Bill</small>
+                      </div>
+                    </div>
+                    <div class="re-card">
+                      <div class="square-box1"></div>
+                      <div class="card-body mt-2">
+                        <h5 class="mb-0">Acoustics</h5>
+                        <small class="text-secondary">Jazzmaster Bill</small>
+                      </div>
+                    </div>
+                    <div class="re-card">
+                      <div class="square-box1"></div>
+                      <div class="card-body mt-2">
+                        <h5 class="mb-0">Out of This World</h5>
+                        <small class="text-secondary">Jazzmaster Bill</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- recently played and recommendation end -->
+          </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+
+    <!-- Scroll Top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+    <!-- Scroll Top -->
+
+
+
+    <!-- bootstrap script links -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/b829c5162c.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/popper.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
